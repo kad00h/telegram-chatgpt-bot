@@ -1,0 +1,61 @@
+Telegrm messages sending and receiving from users. 
+
+So the task is following: 
+
+Algorithm parses account status(if it is not blocked)
+Gets nickname from file 
+sends messages(there will be 2 - 3 messagess that will be sent the same to each user)
+waits for message to be received back
+when message appears it resends it via chatgpt api
+receives answer from chatcgpt
+sends it to user back
+
+To-do list:
+
+1. Set up Telegram client integration
+   - Create/use existing Telegram account
+   - Get API ID and API hash from my.telegram.org
+   - Initialize Telegram client using account credentials
+   - Set up session handling for the account
+
+2. Account status checking
+   - Implement function to check if account is active/blocked
+   - Handle blocked account scenarios
+
+3. Nickname handling
+   - Create function to read nicknames from file
+   - Validate nickname format
+   - Store nicknames in appropriate data structure
+
+4. Message sending system
+   - Create message templates (2-3 messages)
+   - Implement message sending function
+   - Add delay between messages
+   - Verify message delivery
+
+5. Message receiving system
+   - Set up message listener
+   - Implement message handling logic
+   - Store received messages
+
+6. ChatGPT integration
+   - Set up ChatGPT API connection
+   - Create function to send messages to ChatGPT
+   - Process and format ChatGPT responses
+
+7. Response handling
+   - Implement function to send ChatGPT responses back to users
+   - Add error handling
+   - Verify message delivery
+
+8. Testing & Monitoring
+   - Test full message flow
+   - Add logging system
+   - Monitor message success rates
+   - Handle edge cases
+
+9. Performance optimization
+   - Implement rate limiting
+   - Add message queuing if needed
+   - Optimize API calls
+
