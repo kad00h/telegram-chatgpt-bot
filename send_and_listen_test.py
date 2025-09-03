@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Send First Messages and Listen for Responses - TEST MODE
-Sends messages simultaneously and listens for responses at the same time
+Sends messages with random delays (30s-5m) and listens for responses at the same time
 """
 
 import asyncio
 import openai
 import json
 import datetime
+import random
 from telethon import TelegramClient, events
 from telethon.tl.types import User
 
@@ -167,14 +168,14 @@ class SendAndListenTestBot:
             self.log_message(username, message, success=False)
             return False
     
-    async def send_test_messages_simultaneously(self):
-        """Send test messages to all nicknames simultaneously"""
+    async def send_test_messages_with_delays(self):
+        """Send test messages to all nicknames with random delays"""
         if not self.nicknames:
             print("❌ No nicknames loaded. Please check nicknames.txt")
             return
         
-        print(f"🧪 TEST MODE: Sending messages simultaneously to {len(self.nicknames)} users...")
-        print("⚡ All messages will be sent at the same time!")
+        print(f"🧪 TEST MODE: Sending messages with random delays to {len(self.nicknames)} users...")
+        print("⏱️ Random delays between 30 seconds and 5 minutes")
         
         # Test message to send
         test_message = """🧪 TEST MESSAGE
@@ -183,28 +184,30 @@ class SendAndListenTestBot:
 
 Если ты получил это сообщение, значит бот работает правильно!"""
         
-        # Create tasks for all messages
-        tasks = []
-        for nickname in self.nicknames:
-            task = self.send_message_to_user(nickname, test_message)
-            tasks.append(task)
-        
-        # Send all messages simultaneously
-        print("🚀 Sending all messages now...")
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        
-        # Count results
         successful = 0
         failed = 0
-        for i, result in enumerate(results):
-            if isinstance(result, Exception):
-                print(f"❌ Failed to send to @{self.nicknames[i]}: {result}")
-                failed += 1
-            elif result:
-                print(f"✅ Test message sent to @{self.nicknames[i]}")
-                successful += 1
-            else:
-                print(f"❌ Failed to send to @{self.nicknames[i]}")
+        
+        for i, nickname in enumerate(self.nicknames):
+            try:
+                print(f"📤 [{i+1}/{len(self.nicknames)}] Sending to @{nickname}...")
+                
+                success = await self.send_message_to_user(nickname, test_message)
+                if success:
+                    print(f"✅ Test message sent to @{nickname}")
+                    successful += 1
+                else:
+                    print(f"❌ Failed to send to @{nickname}")
+                    failed += 1
+                
+                # Random delay between 30 seconds and 5 minutes
+                if i < len(self.nicknames) - 1:  # Don't delay after last message
+                    delay_seconds = random.uniform(30, 300)  # 30s to 5m
+                    delay_minutes = delay_seconds / 60
+                    print(f"⏳ Waiting {delay_minutes:.1f} minutes before next message...")
+                    await asyncio.sleep(delay_seconds)
+                
+            except Exception as e:
+                print(f"❌ Error sending to @{nickname}: {e}")
                 failed += 1
         
         print(f"📊 Test message results:")
@@ -270,9 +273,9 @@ class SendAndListenTestBot:
             print("💬 You can now send messages to test ChatGPT while the bot is running")
             print("-" * 50)
             
-            # Step 1: Send test messages simultaneously
-            print("🧪 STEP 1: Sending test messages simultaneously...")
-            results = await self.send_test_messages_simultaneously()
+            # Step 1: Send test messages with random delays
+            print("🧪 STEP 1: Sending test messages with random delays...")
+            results = await self.send_test_messages_with_delays()
             
             print(f"\n📊 Test message results:")
             print(f"✅ Successfully sent: {results['successful']}")

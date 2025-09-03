@@ -118,6 +118,62 @@
       "recipient": "andriy_traff",
       "message": "Доброго ранку! Як я можу допомогти вам сьогодні?",
       "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:16:14.488828",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:16:27.111349",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "Привет! Чем могу помочь?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:17:22.938868",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:21:16.433336",
+      "sender_account": "main_account",
+      "recipient": "void_step72",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": false
+    },
+    {
+      "timestamp": "2025-09-03T11:21:53.274552",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:22:09.428896",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "Простите, я не могу просматривать содержимое каналов. Чем могу помочь вам еще?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:22:20.143183",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "Просто я здесь, чтобы помочь ответить на твои вопросы и обсудить интересующие темы. Чем могу помочь?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:22:29.175983",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "Отлично! Если у вас возникнут еще вопросы, не стесняйтесь спрашивать. Я всегда готов помочь!",
+      "success": true
     }
   ]
 }
