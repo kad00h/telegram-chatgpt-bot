@@ -1,0 +1,13 @@
+# List of nicknames to send messages to (without @ prefix)
+# Add one nickname per line
+# Lines starting with # are comments
+
+kad00h
+andriy_traff
+void_step72
+plainrift_18
+wouldtr
+
+# Add more nicknames below:
+# username1
+# username2

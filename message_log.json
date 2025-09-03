@@ -1,0 +1,123 @@
+{
+  "messages": [
+    {
+      "timestamp": "2025-09-03T10:39:29.067591",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "Привет! 👋\n\nХочу пригласить тебя в интересный канал по крипте и трейдингу. \n\nТам делимся полезной информацией, анализом рынка и обсуждаем актуальные темы.\n\nИнтересно? Могу добавить в канал если хочешь.",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:03:23.692736",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "Привет! 👋\n\nХочу пригласить тебя в интересный канал по крипте и трейдингу. \n\nТам делимся полезной информацией, анализом рынка и обсуждаем актуальные темы.\n\nИнтересно? Могу добавить в канал если хочешь.",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:33.032603",
+      "sender_account": "main_account",
+      "recipient": "void_step72",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": false
+    },
+    {
+      "timestamp": "2025-09-03T11:06:33.194014",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:33.245914",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:33.312229",
+      "sender_account": "main_account",
+      "recipient": "wouldtr",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:33.388213",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "🧪 TEST MESSAGE\n\nЭто тестовое сообщение для проверки работы бота.\n\nЕсли ты получил это сообщение, значит бот работает правильно!",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:46.397791",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "Привет! Чем могу помочь?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:47.914806",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Привіт! Чим я можу допомогти сьогодні?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:51.494965",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "Чем могу помочь?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:55.689579",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Я готовий допомогти вам. Що вас цікавить?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:59.048631",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Доброго ранку! Чим я можу допомогти сьогодні?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:06:59.252359",
+      "sender_account": "main_account",
+      "recipient": "plainrift_18",
+      "message": "Можете уточнить ваш вопрос? Я готов помочь вам разобраться.",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:07:05.814245",
+      "sender_account": "main_account",
+      "recipient": "kad00h",
+      "message": "Могу помочь с чем-то конкретным?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:07:09.730239",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Доброго ранку! Я готовий допомогти вам сьогодні. Які питання у вас є?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:07:18.974929",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Вибачте за непорозуміння. Що саме вас цікавить або як я можу допомогти?",
+      "success": true
+    },
+    {
+      "timestamp": "2025-09-03T11:07:29.980571",
+      "sender_account": "main_account",
+      "recipient": "andriy_traff",
+      "message": "Доброго ранку! Як я можу допомогти вам сьогодні?",
+      "success": true
+    }
+  ]
+}
